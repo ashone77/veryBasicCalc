@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Calculator in JS</title>
+</head>
+<body>
+  <div id="calculator-wrapper">
+    <form name="myForm"></form>
+        <div class="output">
+        <!-- <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div> -->
+        <input class="current-operand" TYPE="text" ID="screen" NAME="screen" style="width:100%">
+        </div>
+
+        <button onclick="reset()" data-clear class="span-two">CLR</button>
+        <button onclick="updateTextbox(7)" >÷</button>
+        <button onclick="updateTextbox(1)" data-number>1</button>
+        <button onclick="updateTextbox(2)" data-number>2</button>
+        <button onclick="updateTextbox(3)" data-number>3</button>
+        <button onclick="updateTextbox('*')" data-operation>*</button>
+        <button onclick="updateTextbox(4)" data-number>4</button>
+        <button onclick="updateTextbox(5)" data-number>5</button>
+        <button onclick="updateTextbox(6)" data-number>6</button>
+        <button onclick="updateTextbox('+')" data-operation>+</button>
+        <button onclick="updateTextbox(7)" data-number>7</button>
+        <button onclick="updateTextbox(8)" data-number>8</button>
+        <button onclick="updateTextbox(9)" data-number>9</button>
+        <button onclick="updateTextbox('-')" data-operation>-</button>
+        <button onclick="updateTextbox('.')" data-number>.</button>
+        <button onclick="updateTextbox(0)" data-number>0</button>
+        <button onclick="result()" data-equals class="span-two">=</button>
+        <button></button>
+    </form>
+  </div>  
+</body>
+</html>
